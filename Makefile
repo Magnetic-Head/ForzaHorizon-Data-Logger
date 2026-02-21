@@ -11,7 +11,7 @@ dev-frontend:
 
 .PHONY: dev-backend
 dev-backend:
-	cd $(BACKEND_DIR) && go run main.go
+	cd $(BACKEND_DIR) && go run cmd/server/main.go
 
 .PHONY: build-backend
 build-backend:
