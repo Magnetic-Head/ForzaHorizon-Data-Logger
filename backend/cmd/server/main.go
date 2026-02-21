@@ -1,6 +1,7 @@
 package main
 
 import (
+	. "ForzaHorizonDataLogger/internal/model"
 	"bytes"
 	"encoding/binary"
 	"encoding/json"
@@ -13,11 +14,6 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-type Packet struct {
-	Value1 int32  `json:"value1"`
-	Value2 uint32 `json:"value2"`
-}
-
 // ===== WebSocket 管理 =====
 
 var upgrader = websocket.Upgrader{
@@ -27,7 +23,7 @@ var upgrader = websocket.Upgrader{
 var clients = make(map[*websocket.Conn]bool)
 var mu sync.Mutex
 
-func broadcast(p Packet) {
+func broadcast(p FH4DataStructure) {
 	mu.Lock()
 	defer mu.Unlock()
 
@@ -76,7 +72,7 @@ func udpReceiver() {
 			continue
 		}
 
-		var p Packet
+		var p FH4DataStructure
 		err = binary.Read(
 			bytes.NewReader(buf),
 			binary.LittleEndian,
