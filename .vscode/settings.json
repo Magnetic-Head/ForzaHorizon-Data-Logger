@@ -1,0 +1,241 @@
+{
+	////////////////////////////////////////
+	/////     共通フォーマット設定     /////
+	////////////////////////////////////////
+	// 機能を有効にするだけ
+	"prettier.enable": true,
+	"typescript.format.enable": false,
+
+	// 保存時に自動フォーマット
+	"editor.formatOnSave": true,
+
+	// インデント設定
+	"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+	"editor.insertSpaces": false, // タブ文字を使用
+	"prettier.useTabs": true, // タブ文字を使用
+
+	// Prettierの詳細設定
+	"prettier.semi": true, // 全行にセミコロンを付与
+	"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+	"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+	"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+	"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+
+	// Git差分を見やすくするための設定
+	"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+	"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+	"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+	"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+	"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+
+	///////////////////////////////////////////
+	/////      言語別フォーマット設定     /////
+	///////////////////////////////////////////
+	"[html]": {
+		// 機能を有効にするだけ
+		"prettier.enable": true,
+		"typescript.format.enable": false,
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"prettier.useTabs": true, // タブ文字を使用
+		// Prettierの詳細設定
+		"prettier.semi": true, // 全行にセミコロンを付与
+		"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+		"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+		"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+		"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+
+		// Git差分を見やすくするための設定
+		"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+		"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+		"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+		"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+		"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.tabSize": 2
+	},
+	"[css]": {
+		// 機能を有効にするだけ
+		"prettier.enable": true,
+		"typescript.format.enable": false,
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"prettier.useTabs": true, // タブ文字を使用
+		// Prettierの詳細設定
+		"prettier.semi": true, // 全行にセミコロンを付与
+		"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+		"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+		"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+		"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+		// Git差分を見やすくするための設定
+		"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+		"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+		"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+		"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+		"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		// 機能を有効にするだけ
+		"prettier.enable": true,
+		"typescript.format.enable": false,
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"prettier.useTabs": true, // タブ文字を使用
+		// Prettierの詳細設定
+		"prettier.semi": true, // 全行にセミコロンを付与
+		"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+		"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+		"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+		"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+		// Git差分を見やすくするための設定
+		"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+		"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+		"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+		"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+		"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		// 機能を有効にするだけ
+		"prettier.enable": true,
+		"typescript.format.enable": false,
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"prettier.useTabs": true, // タブ文字を使用
+		// Prettierの詳細設定
+		"prettier.semi": true, // 全行にセミコロンを付与
+		"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+		"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+		"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+		"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+		// Git差分を見やすくするための設定
+		"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+		"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+		"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+		"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+		"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		// 機能を有効にするだけ
+		"prettier.enable": true,
+		"typescript.format.enable": false,
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"prettier.useTabs": true, // タブ文字を使用
+		// Prettierの詳細設定
+		"prettier.semi": true, // 全行にセミコロンを付与
+		"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+		"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+		"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+		"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+		// Git差分を見やすくするための設定
+		"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+		"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+		"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+		"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+		"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.tabSize": 2
+	},
+	"[json]": {
+		// 機能を有効にするだけ
+		"prettier.enable": true,
+		"typescript.format.enable": false,
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"prettier.useTabs": true, // タブ文字を使用
+		// Prettierの詳細設定
+		"prettier.semi": true, // 全行にセミコロンを付与
+		"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+		"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+		"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+		"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+		// Git差分を見やすくするための設定
+		"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+		"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+		"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+		"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+		"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.tabSize": 2,
+		"prettier.tabWidth": 2,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		// 機能を有効にするだけ
+		"prettier.enable": true,
+		"typescript.format.enable": false,
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"prettier.useTabs": true, // タブ文字を使用
+		// Prettierの詳細設定
+		"prettier.semi": true, // 全行にセミコロンを付与
+		"prettier.singleQuote": true, // 文字列を囲う際はシングルクォートを使用
+		"prettier.jsxSingleQuote": true, // JSX(React)でもシングルクォートを使用
+		"prettier.printWidth": 100, // 自動改行のための文字数制限。増やし過ぎると差分エディタが見づらくなるので注意
+		"prettier.arrowParens": "always", // アロー関数(ラムダ式)の引数に常に括弧を付ける
+		// Git差分を見やすくするための設定
+		"prettier.quoteProps": "as-needed", // JSオブジェクトのプロパティ名は必要な場合のみ''で囲む
+		"prettier.trailingComma": "all", // JSオブジェクトの最後の要素の後に}がない場合(複数行で記述される際)はカンマを付ける
+		"prettier.bracketSpacing": true, // JSオブジェクトの中括弧の最初と最後にスペースを入れる
+		"prettier.bracketSameLine": false, // JSXの閉じタグを新しい行に配置
+		"prettier.htmlWhitespaceSensitivity": "ignore", // HTMLの改行において、タグに挟まれたテキスト前後の空白を無視する
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.tabSize": 2,
+		"prettier.tabWidth": 2,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[xml]": {
+		// 保存時に自動フォーマット
+		"editor.formatOnSave": true,
+		// インデント設定
+		"editor.detectIndentation": false, // ファイルの状態を察する機能を無効化
+		"editor.insertSpaces": false, // タブ文字を使用
+		"files.insertFinalNewline": true,
+
+		// 以下言語別詳細設定
+		"editor.defaultFormatter": "redhat.vscode-xml"
+	}
+}
